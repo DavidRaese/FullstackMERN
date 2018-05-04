@@ -8,20 +8,19 @@ const UserSchema = new Schema({
     required: true
   },
   email: {
-    type: string,
+    type: String,
     required: true,
     unique: true
   },
   password: {
-    type: string,
+    type: String,
     required: true
   },
   avatar: {
-    type: string,
-    required: true
+    type: String
   },
   date: {
-    type: string,
+    type: String,
     default: Date.now
   }
 });
